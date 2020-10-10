@@ -1,0 +1,17 @@
+
+
+.App{
+  background-color: #b3d5e3;
+  height: 1000px;
+  color: white;
+}
+
+.boardGame {
+    text-align: center;
+    color: white;
+}
+
+.current {
+  font-size: 30px;
+
+}
