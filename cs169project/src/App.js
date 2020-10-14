@@ -79,33 +79,53 @@ class App extends Component{
   }
 
 /*<Square value={this.state.board[0]} handleClick={this.updateBoard.bind(this,0)}/>*/
+/*        <Header />*/
   render() {
     return (
       <div className="App">
-        <Header />
-
-        <div className = "boardGame">
-              <h1> {this.playerWon()}</h1>
-              <div>
-                <Square value={this.state.board[0]} handleClick={this.updateBoard.bind(this, 0)}/>
-                <Square value={this.state.board[1]} handleClick={this.updateBoard.bind(this, 1)}/>
-                <Square value={this.state.board[2]} handleClick={this.updateBoard.bind(this, 2)}/>
-              </div>
-              <div>
-                <Square value={this.state.board[3]} handleClick={this.updateBoard.bind(this, 3)}/>
-                <Square value={this.state.board[4]} handleClick={this.updateBoard.bind(this, 4)}/>
-                <Square value={this.state.board[5]} handleClick={this.updateBoard.bind(this, 5)}/>
-              </div>
-              <div>
-                <Square value={this.state.board[6]} handleClick={this.updateBoard.bind(this, 6)}/>
-                <Square value={this.state.board[7]} handleClick={this.updateBoard.bind(this, 7)}/>
-                <Square value={this.state.board[8]} handleClick={this.updateBoard.bind(this, 8)}/>
-              </div>
-              <p className = "current"> Current player's turn: {this.state.turn} </p>
-            </div>
+         <Header />
+         <br/><br/>
+         <h>{this.playerWon()}</h>
+         <br/><br/><br/>
+         <div>
+           <Square value={this.state.board[0]} handleClick={this.updateBoard.bind(this, 0)}/>
+           <Square value={this.state.board[1]} handleClick={this.updateBoard.bind(this, 1)}/>
+           <Square value={this.state.board[2]} handleClick={this.updateBoard.bind(this, 2)}/>
+         </div>
+         <div>
+           <Square value={this.state.board[3]} handleClick={this.updateBoard.bind(this, 3)}/>
+           <Square value={this.state.board[4]} handleClick={this.updateBoard.bind(this, 4)}/>
+           <Square value={this.state.board[5]} handleClick={this.updateBoard.bind(this, 5)}/>
+         </div>
+         <div>
+           <Square value={this.state.board[6]} handleClick={this.updateBoard.bind(this, 6)}/>
+           <Square value={this.state.board[7]} handleClick={this.updateBoard.bind(this, 7)}/>
+           <Square value={this.state.board[8]} handleClick={this.updateBoard.bind(this, 8)}/>
+         </div>
+         <p className = "current"> Current player's turn: {this.state.turn} </p>
       </div>
     );
   }
 }
 
 export default App;
+
+/*
+<h1> {this.playerWon()}</h1>
+<div>
+  <Square value={this.state.board[0]} handleClick={this.updateBoard.bind(this, 0)}/>
+  <Square value={this.state.board[1]} handleClick={this.updateBoard.bind(this, 1)}/>
+  <Square value={this.state.board[2]} handleClick={this.updateBoard.bind(this, 2)}/>
+</div>
+<div>
+  <Square value={this.state.board[3]} handleClick={this.updateBoard.bind(this, 3)}/>
+  <Square value={this.state.board[4]} handleClick={this.updateBoard.bind(this, 4)}/>
+  <Square value={this.state.board[5]} handleClick={this.updateBoard.bind(this, 5)}/>
+</div>
+<div>
+  <Square value={this.state.board[6]} handleClick={this.updateBoard.bind(this, 6)}/>
+  <Square value={this.state.board[7]} handleClick={this.updateBoard.bind(this, 7)}/>
+  <Square value={this.state.board[8]} handleClick={this.updateBoard.bind(this, 8)}/>
+</div>
+<p className = "current"> Current player's turn: {this.state.turn} </p>
+*/

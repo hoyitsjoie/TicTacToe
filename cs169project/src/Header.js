@@ -15,7 +15,7 @@ class Header extends Component {
   render(){
     return(
       <div style = {style}>
-        <h1>  2 Player Tic Tac Toe Game </h1>
+        <h>  2 Player Tic Tac Toe Game </h>
       </div>
     );
   }
